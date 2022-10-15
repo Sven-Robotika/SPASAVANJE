@@ -1,0 +1,11 @@
+#pragma once
+#include "helper.h"
+void RobotLine::radionica() {
+  if (front() < 110) {
+    stop();
+    end();
+  }
+  else {
+    go(70, -80);
+  }
+}
